@@ -18,4 +18,10 @@ let networkInfo = os.networkInterfaces();
 //console.log(networkInfo);
 
 // Returns the operating system as a string.
-console.log(os.release());
+//console.log(os.release());
+
+// Returns the total amount of system memory in bytes as an integer.
+console.log(os.totalmem());
+
+// Returns the system uptime in number of seconds.
+console.log(os.uptime());
