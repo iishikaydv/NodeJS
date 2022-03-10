@@ -20,8 +20,19 @@ let networkInfo = os.networkInterfaces();
 // Returns the operating system as a string.
 //console.log(os.release());
 
-// Returns the total amount of system memory in bytes as an integer.
-console.log(os.totalmem());
+// Returns a string identifying the operating system platform. The value is set at compile time.
+console.log(os.platform());  
 
-// Returns the system uptime in number of seconds.
-console.log(os.uptime());
+// Returns the operating system name as returned by uname(3).
+console.log(os.type());  
+
+// Returns the total amount of system memory in bytes as an integer.
+// console.log(os.totalmem());
+
+// // Returns the system uptime in number of seconds.
+// console.log(os.uptime());
+let uptimeInMin = os.uptime() / 3600;
+// console.log(uptimeInMin);
+
+// // Returns information about the currently effective user.
+// console.log(os.userInfo());
