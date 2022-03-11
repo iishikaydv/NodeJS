@@ -24,7 +24,7 @@ for (let i = 0; i < filesArr.length; i++) {
     let doesExist = fs.existsSync(filesArr[i]);    // Returns true if the path exists, false otherwise.
     if (!doesExist) {
         console.log("Files does not Exist ");
-        return;
+        // return;   // Error
     }
 }
 
